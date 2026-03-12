@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NumberController;
+use App\Http\Controllers\ProductsController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -16,3 +17,12 @@ Route::post('/multiplication-table', [NumberController::class, 'multiplicationTa
 Route::get('/even-odd/{number}', [NumberController::class, 'evenOddFromUrl'])->name('evenodd.url');
 
 Route::get('/multiplication/{number}', [NumberController::class, 'multiplicationFromUrl'])->name('multiplication.url');
+
+Route::get('/getProducts', [ProductsController::class, 'getProducts'])->name('task2');
+
+Route::get('products', [ProductsController::class, 'list'])->name('products_list');
+
+
+Route::get('/getProducts', [ProductsController::class, 'getProducts'])->name('task2');
+Route::get('/viewForm', [ProductsController::class, 'viewForm']);
+Route::post('/addProduct', [ProductsController::class, 'addProduct']);

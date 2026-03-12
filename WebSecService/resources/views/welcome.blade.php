@@ -99,11 +99,11 @@ h3{
 <div class="decor">
 <span>💗</span>
 <span style="left:10%; animation-duration:8s;">🎀</span>
-<span style="left:25%; animation-duration:11s;">💖</span>
+
 <span style="left:40%; animation-duration:9s;">🎀</span>
-<span style="left:55%; animation-duration:12s;">💗</span>
+
 <span style="left:70%; animation-duration:7s;">🎀</span>
-<span style="left:85%; animation-duration:10s;">💖</span>
+
 </div>
 
 <div class="container">
@@ -113,6 +113,7 @@ h3{
 <h3>Course: Web and Security</h3>
 
 <a href="{{ route('task1.form') }}" class="tab-link">Task 1</a>
+<a href="{{ route('task2') }}" class="tab-link" style="margin-top:10px;">Task 2</a>
 
 </div>
 
